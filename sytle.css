@@ -6,7 +6,11 @@
 }
 
 header{
-    margin: 44px 0px 0px 76px;
+    display: flex;
+    padding: 1px;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
 }
 
 a{
@@ -20,6 +24,10 @@ a{
 
 a:hover{
     opacity: .3;
+}
+
+.button-header:active{
+    scale: .9;
 }
 
 .button-header{
@@ -41,36 +49,51 @@ a:hover{
     opacity: 0.3;
 }
 
+section{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
 img{
-    position: absolute;
-    width: 568px;
-    height: 500px;
-    margin-top: 217px;
-    margin-left: 125px;
+    margin-left: 1rem;
+    padding: 1rem;
+    width: 468px;
+    height: 400px;
+    
+}
+
+.section-paragrafo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    margin-left: 1rem;
 }
 
 h1{
-    position: absolute;
+    
     font-weight: 900;
     font-size: 100px;
     line-height: 122px;
     color: #515151;
-    margin-top: 217px;
-    margin-left: 779px;
+    
 }
 
 h2{
-    position: absolute;
+    
     font-weight: 500;
     font-size: 58px;
     line-height: 71px;
     color: #515151;
-    margin-top: 338px;
-    margin-left: 779px;
+    
 }
 
 p{
-    position: absolute;
+    justify-content: center;
+    display: flex;
+    align-items: center;
     size: 24px;
     width: 515px;
     height: 87px;
@@ -78,8 +101,7 @@ p{
     font-size: 24px;
     line-height: 29px;
     color: #848484;
-    margin-top: 441px;
-    margin-left: 779px;
+    
 }
 
 .button-section{
@@ -90,61 +112,116 @@ p{
     background-color: #ADFF00;
     cursor: pointer;
 
-    margin-top: 593px;
-    margin-left: 779px;
-
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
     color: #000000;
-    filter: drop-shadow(0px 4px 4px #000000);
+    filter: drop-shadow(0px 4px 4px #252525);
 
 }
 
 .button-section:hover{
-    opacity: 0.3;
+    opacity: 0.8;
 }
 
-@media screen and (max-width: 1250px) {
+.button-section:active{
+    scale: .9;
+}
+
+
+@media screen and (max-width: 600px) {
     header{
         display: none;
     }
 
     img{
-        position: absolute;
+        
         width: 354px;
         height: 317px;
     }
 
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     h1{
-        position: absolute;
+        
         font-size: 63px;
         line-height: 61px;
-        margin-top: 573px;
         height: 52px;
-        margin-left: 159px;
     }
 
     h2{
         font-weight: 500;
         font-size: 30px;
         line-height: 37px;
-        margin-left: 185px;
-        margin-top: 638px;
     }
 
     p{
         display: none;
     }
 
-    .button-section{
-        margin-left: 185px;
-        margin-top: 721px;
-    }
-      
+    .section-paragrafo{
+        gap: 30px;
+    }      
 }
 
-@media screen and (max-width: 400px) {
+
+@media screen and (max-width: 850px) {
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h1{
+        font-size: 63px;
+        line-height: 61px;
+        height: 52px;
+    }
+
+    h2{
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 37px;
+    }
+
+    p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-paragrafo{
+        gap: 30px;
+    }
+
+    .button-section{
+        position: static;
+    }
+
+    .button-header{
+        width: 130px;
+        height: 41px;
+        font-size: 10px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 450px) {
     header{
         display: none;
     }
@@ -154,22 +231,21 @@ p{
         margin-left: auto
     }
 
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
     h1{
-        position: static;
-        font-size: 63px;
+        font-size: 50px;
         line-height: 61px;
-        margin-top: 73px;
         height: 52px;
-        margin-left: 30px;
     }
 
     h2{
-        position: static;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 37px;
-        margin-left: 55px;
-        margin-top: 18px;
     }
 
     p{
@@ -177,8 +253,6 @@ p{
     }
 
     .button-section{
-        margin-left: 53px;
-        margin-top: 40px;
         position: static;
     }
 
